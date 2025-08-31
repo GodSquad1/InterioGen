@@ -15,7 +15,7 @@ def generate_interior(prompt, style="modern", size="1024x1024"):
     """
     response = client.images.generate(
         model="dall-e-3",
-        prompt=f"{prompt}, interior design style: {style}",
+        prompt=f"You are an experienced interior designer. {prompt}, interior design style: {style}",
         n=1,
         size=size,
         response_format="b64_json"  # returns base64
